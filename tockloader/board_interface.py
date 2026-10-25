@@ -77,7 +77,7 @@ class BoardInterface:
             "no_attribute_table": True,
             "probers": {
                 "chip": "nRF5340_xxAA",
-                "core": 1,
+                "options": ["--core", "1"],
             },
         },
         "nano33ble": {

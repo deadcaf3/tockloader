@@ -1001,6 +1001,12 @@ def main():
         help="Specify a specific probe when using probe-rs.",
     )
     parent_channel.add_argument(
+        "--probers-options",
+        default=[],
+        help='Extra arguments for probe-rs "read" and "reset". Example: --probers-options="--core 1"',
+        nargs="*",
+    )
+    parent_channel.add_argument(
         "--linkserver-device", help="The device for LinkServer."
     )
     parent_channel.add_argument(
